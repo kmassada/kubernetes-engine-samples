@@ -26,10 +26,10 @@ spec:
   minReplicas: 1
   maxReplicas: 5
   metrics:
-  - type: Pods
-    pods:
+  - type: External
+    external:
       metric:
-        name: custom-metric
+        name: custom.googleapis.com|custom-metric
       target:
         type: AverageValue
         averageValue: 20
